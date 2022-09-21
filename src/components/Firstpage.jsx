@@ -4,10 +4,10 @@ import "./Firstpage.css";
 const Firstpage = () => {
   return (
       <div className="row">
-            <div className="menu col-3">
-              <div className="logo d-flex">
+            <div className="menu col-2">
+              <div className="logo d-flex p-3">
                 <div
-                  className="icon"
+                  className="icon mb-4 mx-3"
                   style={{ transform: "rotate(45deg)" }}
                 >
                   <svg
@@ -23,7 +23,7 @@ const Firstpage = () => {
                 </div>
                 <p className="brand h4">examica</p>
               </div>
-              <div className="testbutton">
+              <div className="testbutton text-center mb-4">
                 <button type="button" className="btn btn-primary btn-m">
                   Nowy Test
                   <svg
@@ -38,24 +38,25 @@ const Firstpage = () => {
                   </svg>
                 </button>
               </div>
-              <div className="navigation">
-                <ul>
-                  <li>Testy</li>
-                  <li>Wszystkie</li>
-                  <li>Udostepnione</li>
-                  <li>Ostatnie</li>
-                  <li>Usuniete</li>
+              <div className="navigation p-4">
+                <ul className="nav flex-column mb-5">
+                  <li className="mb-3 ms-2">Testy</li>
+                  <li className="mb-3 ms-2">Wszystkie</li>
+                  <li className="mb-3 ms-2">Udostepnione</li>
+                  <li className="mb-3 ms-2">Ostatnie</li>
+                  <li className="mb-3 ms-2">Usuniete</li>
                 </ul>
               </div>
-              <div className="settings">
+              <div className="line"></div>
+              <div className="settings m-4">
                 <div className="letters">
-                  <p className="h6">Ustawienia</p>
-                  <p className="h6">Polityka Prywatności</p>
+                  <p className="h7">Ustawienia</p>
+                  <p className="h7">Polityka Prywatności</p>
                 </div>
                 <div className="setlogo">
-                  <div className="setlogoTop d-flex">
-                    <p>Skorzystaj ze wszystkich mozliwości</p>
-                    <div className="setLogoSvg p-2">
+                  <div className="setlogoTop d-flex p-2">
+                    <p className="mt-2">Skorzystaj ze wszystkich mozliwości</p>
+                    <div className="setLogoSvg">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="26"
@@ -69,14 +70,14 @@ const Firstpage = () => {
                     </div>
                   </div>
                   <div className="d-grid gap-2">
-                    <button className="btn btn-light" type="button">
+                    <button className="buttonset p-2" type="button">
                       Zmien taryfe
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="main col-9">
+            <div className="main col-10">
               <nav>
               
               </nav>

@@ -3,7 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .row{
     height: 100vh;
+}
+.menu{
+   background-color: rgb(241, 243, 246);
+   padding: 1rem;
+}
+.line{
+    height: .2rem;
+    background-color: rgb(198, 203, 211);
+}
+.setlogo{
+    background-color:white;
+    padding: .2rem;
+}
+
+.setLogoSvg{
+    width: fit-content;
+    height: fit-content;
+    border: .5rem solid rgb(198, 203, 211);
+    border-radius: 50%;
+}
+.buttonset{
+    border: none;
+    background-color: rgb(219, 229, 251);
 }
