@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --bs-gutter-x: 0
 }
 .row{
     height: 100vh;
 }
+
 .menu{
    background-color: rgb(241, 243, 246);
    padding: 1rem;
@@ -28,4 +30,21 @@
 .buttonset{
     border: none;
     background-color: rgb(219, 229, 251);
+}
+.searchbar{
+    display: inline;
+    padding: .5rem;
+    background-color: rgb(241, 243, 246);
+}
+.searchInput{
+    background-color: rgb(241, 243, 246);
+    border: none;
+}
+.username{
+    font-weight: 800;
+}
+.notification{
+    background-color: rgb(241, 243, 246);
+    width: 30px;
+    height: 30px;
 }
