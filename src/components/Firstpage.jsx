@@ -1,7 +1,11 @@
 import React from "react";
 import "./Firstpage.css";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import Badge from '@mui/material/Badge';
+import Badge from "@mui/material/Badge";
+import threedot from "../asset/dots.png";
+import twodot from "../asset/dotss.png";
+import check from "../asset/check.png";
+import checked from "../asset/checked.png";
 
 const Firstpage = () => {
   return (
@@ -56,6 +60,7 @@ const Firstpage = () => {
             <p className="h7">Polityka Prywatności</p>
           </div>
           <div className="setlogo">
+            <div className="corner"></div>
             <div className="setlogoTop d-flex p-2">
               <p className="mt-2">Skorzystaj ze wszystkich mozliwości</p>
               <div className="setLogoSvg">
@@ -82,7 +87,7 @@ const Firstpage = () => {
       <div className="main col-10 p-4">
         <nav className="d-flex justify-content-between">
           <div className="searchbar">
-            <input type="search" name="search" className="searchInput" />
+            <input type="search" name="search" className="searchInput ps-2" placeholder="Szukaj testow"/>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="12"
@@ -118,7 +123,260 @@ const Firstpage = () => {
             </div>
           </div>
         </nav>
-        
+        <div className="header">
+          <p className="h3 mt-5">Kreator testow</p>
+          <p style={{color:"rgb(182, 185, 191)"}}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quos
+            sint corporis, iste consequuntur animi illo possimus.
+          </p>
+          <div className="line"></div>
+          <div className="questions">
+            <div className="question p-2 mt-4">
+              <div className="questionHeader d-flex justify-content-between mx-auto">
+                <div className="d-flex my-3">
+                  <div className="questionIcon">
+                    <img src={threedot} alt="dots" className="" />
+                  </div>
+                  <div>
+                    <p className="h3 ms-3">Pytanie 1</p>
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    className="bi bi-x-lg my-auto"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                  </svg>
+                </div>
+              </div>
+              <div className="questionBody p-2 mx-auto mb-2">
+                <p className="my-auto">Najwyzszy szcyt polski to:</p>
+              </div>
+              <div className="questionChoice mx-auto mb-2">
+                <img src={twodot} alt="dots" className="twodot" />
+                <p className="h5 my-auto">A</p>
+                <div className="choicesRight d-flex">
+                  <p className="my-auto ps-2">Sniezka</p>
+                  <div className="d-flex">
+                    <img
+                      src={check}
+                      alt="check"
+                      className="check my-auto mx-1"
+                    />
+                    <div className="x px-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        className="bi bi-x-lg my-auto"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="questionChoice mx-auto mb-2">
+                <img src={twodot} alt="dots" className="twodot" />
+                <p className="h5 my-auto">B</p>
+                <div className="choicesRight d-flex">
+                  <p className="my-auto ps-2">Rysy</p>
+                  <div className="d-flex">
+                    <img
+                      src={checked}
+                      alt="check"
+                      className="check my-auto mx-1"
+                    />
+                    <div className="x px-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        className="bi bi-x-lg my-auto"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="addButton mx-auto mb-2">
+                <p className="text-primary">Dodaj odpowiedz +</p>
+              </div>
+            </div>
+          </div>
+          <div className="questions">
+            <div className="question p-2 mt-4">
+              <div className="questionHeader d-flex justify-content-between mx-auto">
+                <div className="d-flex my-3">
+                  <div className="questionIcon">
+                    <img src={threedot} alt="dots" className="" />
+                  </div>
+                  <div>
+                    <p className="h3 ms-3">Pytanie 2</p>
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    className="bi bi-x-lg my-auto"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                  </svg>
+                </div>
+              </div>
+              <div className="questionBody p-2 mx-auto mb-2">
+                <p className="my-auto">Stolica Wloch jest?</p>
+              </div>
+              <div className="questionChoice mx-auto mb-2">
+                <img src={twodot} alt="dots" className="twodot" />
+                <p className="h5 my-auto">A</p>
+                <div className="choicesRight d-flex">
+                  <p className="my-auto ps-2">Rzym</p>
+                  <div className="d-flex">
+                    <img
+                      src={checked}
+                      alt="check"
+                      className="check my-auto mx-1"
+                    />
+                    <div className="x px-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        className="bi bi-x-lg my-auto"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="questionChoice mx-auto mb-2">
+                <img src={twodot} alt="dots" className="twodot" />
+                <p className="h5 my-auto">B</p>
+                <div className="choicesRight d-flex">
+                  <p className="my-auto ps-2">Mediolan</p>
+                  <div className="d-flex">
+                    <img
+                      src={check}
+                      alt="check"
+                      className="check my-auto mx-1"
+                    />
+                    <div className="x px-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        className="bi bi-x-lg my-auto"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="questionChoice mx-auto mb-2">
+                <img src={twodot} alt="dots" className="twodot" />
+                <p className="h5 my-auto">C</p>
+                <div className="choicesRight d-flex">
+                  <p className="my-auto ps-2">Neapol</p>
+                  <div className="d-flex">
+                    <img
+                      src={check}
+                      alt="check"
+                      className="check my-auto mx-1"
+                    />
+                    <div className="x px-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        className="bi bi-x-lg my-auto"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="questionChoice mx-auto mb-2">
+                <img src={twodot} alt="dots" className="twodot" />
+                <p className="h5 my-auto">D</p>
+                <div className="choicesRight d-flex">
+                  <p className="my-auto ps-2">Turyn</p>
+                  <div className="d-flex">
+                    <img
+                      src={check}
+                      alt="check"
+                      className="check my-auto mx-1"
+                    />
+                    <div className="x px-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        className="bi bi-x-lg my-auto"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="addButton mx-auto mb-2">
+                <p className="text-primary">Dodaj odpowiedz +</p>
+              </div>
+            </div>
+          </div>
+          <div className="questionAddButton d-flex my-3">
+            <p className="text-primary m-auto py-1">Dodaj odpowiedz +</p>
+          </div>
+          <div className="buttonEnd mx-auto my-3">
+            <div className="d-grid gap-2">
+              <button
+                className="buttonTest p-4 d-flex justify-content-between bg-primary"
+                type="button"
+              >
+                Stworz test
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fillRule="currentColor"
+                  className="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
